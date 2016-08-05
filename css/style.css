@@ -1,0 +1,186 @@
+/*==============RESET CSS===============*/
+
+html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* Aligns the baseline of the element with the baseline of the parent element. This is default*/
+  vertical-align: baseline;
+}
+
+/*==============HEADER/FOOTER===============*/
+header { 
+  text-align: center;
+}
+
+#head_logo {
+  margin: 0 31%;
+  width: 36%;
+  height: 100%;
+}
+
+header nav ul,
+footer nav ul {
+  margin: 2% 0;
+  display: inline-block;
+  list-style-type: none;
+}
+
+footer nav ul {
+  margin: 0 24%;
+  background: #FBF8FB;
+  padding: 1em;
+}
+
+header nav li {
+  float: left;
+}
+
+header nav li + li:before,
+footer nav li + li:before {
+  content: " | ";
+  float: left;
+}
+
+header nav li a,
+footer nav li a {
+  font-size: 1.5em;
+  display: block;
+  color: #34282C;
+  padding: 0 2em;
+  text-decoration: none;
+}
+
+footer nav li a {
+  font-size: 1.3em;
+}
+
+header li.active a {
+  font-weight: bold;
+  color: #959592;
+}
+
+footer nav li {
+  float: left;
+  font-size: 75%;
+}
+
+/*==============STICKY FOOTER===============*/
+
+html{
+  position:relative; 
+  min-height: 100%;
+}
+
+
+footer{
+  text-align: center;
+  color: #FFFFFF;
+  /*sticky*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:.8em;
+}
+
+/*make sure content doesnt get covered by footer*/
+footer nav {
+  margin-top: 2em;
+}
+
+
+/*================CONTENT================*/
+
+@font-face {
+  font-family: 'Agency FB';
+  src: url('Agency_FB.ttf') format('truetype');
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Agency FB', Calibri, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+main {
+  margin: 0 21.5%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#orderPage {
+  text-align: center;
+}
+
+#contact {
+  margin: 0 33% 1em 33%;
+}
+
+/* #profilePic, #mainPic */
+/* If JS is disabled - default size */
+img {
+  margin-top: 1em;
+  height: 37em;
+  width: 25em;
+}
+
+#profileInfo {
+  margin: 1em auto;
+  text-align: left;
+  width: 25em;
+}
+
+form {
+  padding: 1em 0;
+}
+
+input,
+select {
+  margin: 1em 0.5em;
+}
+
+input[type="radio"] {
+  
+}
+
+input[type="submit"] {
+  background-color: #F2A6BC; /* Pink now. Grey: #756C6C*/
+  margin: 0;
+  color: #fff;
+  padding: 0.3em 1.8em;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 0;
+  font-family: 'Agency FB', Calibri, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #E48CA5; /* Pink now. Grey: #AAA */
+}
+
+.group {
+  margin: 1em 0;
+}
+
+.error {
+  color: #CC0000;
+}
+
+/*================GALLERY================*/
+
+.mosaicflow__column { 
+  float:left; 
+} 
+
+.mosaicflow__item img { 
+  display:block; 
+  width:100%; 
+  height:auto; 
+}
